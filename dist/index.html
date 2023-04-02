@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Createx</title>
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
@@ -21,12 +22,12 @@
             <div class="container">
                 <!-- 1.1 НАВИГАЦИЯ -->
                 <nav class="navbar">
-                    <div class="navbar__inner-left">
+                    <div class="navbar__inner-left-box">
                         <!-- 1.1.1 ЛОГОТИП -->
                         <div class="navbar__logo-box">
-                            <img src="assets/logos/createx-dark.svg" alt="Логотип">
+                            <img class="navbar__logo" src="assets/logos/createx-dark.svg" alt="Логотип">
                         </div>
-        
+
                         <!-- 1.1.2 МЕНЮ -->
                         <ul class="navbar__menu">
                             <li class="navbar__menu-item">
@@ -46,38 +47,82 @@
                             </li>
                         </ul>
                     </div>
-    
+
                     <!-- 1.1.3 ПРОФИЛЬ -->
                     <div class="navbar__profile">
-                        <button class="navbar__btn-get-consul button">Get consultation</button>
-    
+                        <button class="navbar__btn-get-consultation button">Get consultation</button>
+
                         <div class="navbar__auth">
-                            <img src="assets/icons/header/profile.svg" alt="Профиль">
-    
-                            <p class="navbar__login-regis">
+                            <img class="navbar__profile-icon" src="assets/icons/header/profile.svg" alt="Профиль">
+
+                            <p class="navbar__login-register">
                                 <a href="#" class="link">Log in<a> / <a href="#" class="link">Register</a>
                             </p>
                         </div>
                     </div>
                 </nav>
-    
+
                 <!-- 1.2 КОНТЕНТ -->
-                <div class="content">
-                    <div class="header">
-    
+                <div class="fs-content">
+                    <!-- 1.2.1 ЗАГОЛОВОК -->
+                    <div class="fs-content__header-box">
+                        <a class="fs-content__video-box" href="https://youtu.be/i45cot-R224" data-fancybox>
+                            <div class="fs-content__video-hover-box">
+                                <img class="fs-content__icon-play" src="assets/icons/header/play.svg" alt="Видео">
+                                <div class="fs-content__video-hover"></div>
+                            </div>
+
+                            <p class="fs-content__text-play">Play showreel</p>
+                        </a>
+
+                        <h1 class="fs-content__header">Enjoy studying with Createx Online Courses</h1>
+
+                        <div class="fs-content__btns">
+                            <button class="fs-content__button-outline button_outline">About Us</button>
+                            <button class="fs-content__button button">Explore courses</button>
+                        </div>
                     </div>
-    
-                    <div class="stats">
-                        
+
+                    <!-- 1.2.2 Изображение -->
+                    <div class="fs-content__img-box">
+                        <img class="fs-content__img" src="assets/images/header/illustration.svg" alt="Иллюстрация">
+                    </div>
+                </div>
+
+                <!-- 1.3 СТАТИСТИКА -->
+                <div class="fs-stats">
+                    <div class="fs-stats__item">
+                        <h5 class="fs-stats__item-header">1200</h5>
+                        <p class="fs-stats__item-desc">Students graduated</p>
+                    </div>
+
+                    <div class="fs-stats__circle"></div>
+
+                    <div class="fs-stats__item">
+                        <h5 class="fs-stats__item-header">84</h5>
+                        <p class="fs-stats__item-desc">Completed courses</p>
+                    </div>
+
+                    <div class="fs-stats__circle"></div>
+
+                    <div class="fs-stats__item">
+                        <h5 class="fs-stats__item-header">16</h5>
+                        <p class="fs-stats__item-desc">Qualified tutors</p>
+                    </div>
+
+                    <div class="fs-stats__circle"></div>
+
+                    <div class="fs-stats__item">
+                        <h5 class="fs-stats__item-header">5</h5>
+                        <p class="fs-stats__item-desc">Years of experience</p>
                     </div>
                 </div>
             </div>
         </header>
-
-
-        <!--  -->
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="js/main.js"></script>
 </body>
 
