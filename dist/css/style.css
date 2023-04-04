@@ -257,58 +257,45 @@ html, body {
 
 
 /* 2. О НАС */
-.main {}
-
-.main-light {}
-
-.main-gray {}
-
 .about-us {
     margin: 180px 0 160px;
 }
 
-.container {}
-
+/* 2.1 ЗАГОЛОВОК БЛОКА */
 .au-head {
     margin-bottom: 180px;
     display: flex;
     justify-content: space-between;
 }
 
+/* 2.1.1 КОНТЕНТ */
 .au-head__content {
     width: 48%;
 }
-
-.au-head__overheader {}
 
 .au-head__header {
     margin-bottom: 48px;
 }
 
-.au-head__subheader {}
-
 .au-head__paragraph {
     margin: 24px 0 60px;
 }
-
-.au-head__btn-box {}
 
 .au-head__button_outline {
     margin-right: 20px;
 }
 
-.au-head__button {}
-
+/* 2.1.2 ИЗОБРАЖЕНИЕ */
 .au-head__img-box {
     margin-top: 40px;
 }
 
-.au-head__img {}
-
+/* 2.2 СТАТИСТИКА */
 .au-stats {
     display: flex;
 }
 
+/* 2.2.1 ИЗОБРАЖЕНИЕ */
 .au-stats__img-box {
     width: 60%;
     margin-right: 120px;
@@ -319,6 +306,7 @@ html, body {
     width: 100%;
 }
 
+/* 2.2.2 ЦИФРЫ */
 .au-stats__list {
     display: flex;
     flex-direction: column;
