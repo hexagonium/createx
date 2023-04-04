@@ -71,6 +71,37 @@ html, body {
     transition: all 0.05s linear;
 }
 
+.overheader {
+    color: #1E212C;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    line-height: 150%;
+}
+
+.header {
+    color: #1E212C;
+    font-weight: 900;
+    font-size: 46px;
+    margin-bottom: 60px;
+    line-height: 130%;
+}
+
+.subheader {
+    color: #1E212C;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.paragraph {
+    color: #424551;
+    font-weight: 400;
+    line-height: 160%;
+}
+
 
 
 /* ----- БЛОКИ ----- */
@@ -105,10 +136,6 @@ html, body {
     display: flex;
     align-items: center;
     margin-right: 60px;
-}
-
-.navbar__logo {
-    /* margin-left: 15px; */
 }
 
 /* 1.1.2 МЕНЮ */
@@ -187,7 +214,7 @@ html, body {
     width: 70%;
 }
 
-.fs-content__button-outline {
+.fs-content__button_outline {
     margin-right: 20px;
 }
 
@@ -195,8 +222,6 @@ html, body {
 .fs-content__img-box {
     margin-right: -32px;
 }
-
-.fs-content__img {}
 
 /* 1.3 СТАТИСТИКА */
 .fs-stats {
@@ -228,4 +253,96 @@ html, body {
     height: 8px;
     border-radius: 50%;
     margin: 0 15px;
+}
+
+
+/* 2. О НАС */
+.main {}
+
+.main-light {}
+
+.main-gray {}
+
+.about-us {
+    margin: 180px 0 160px;
+}
+
+.container {}
+
+.au-head {
+    margin-bottom: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.au-head__content {
+    width: 48%;
+}
+
+.au-head__overheader {}
+
+.au-head__header {
+    margin-bottom: 48px;
+}
+
+.au-head__subheader {}
+
+.au-head__paragraph {
+    margin: 24px 0 60px;
+}
+
+.au-head__btn-box {}
+
+.au-head__button_outline {
+    margin-right: 20px;
+}
+
+.au-head__button {}
+
+.au-head__img-box {
+    margin-top: 40px;
+}
+
+.au-head__img {}
+
+.au-stats {
+    display: flex;
+}
+
+.au-stats__img-box {
+    width: 60%;
+    margin-right: 120px;
+}
+
+.au-stats__img {
+    border-radius: 4px;
+    width: 100%;
+}
+
+.au-stats__list {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+    row-gap: 20px;
+}
+
+.au-stats__item {
+    display: flex;
+    align-items: center;
+}
+
+.au-stats__item-header {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 130%;
+    letter-spacing: 1px;
+    color: #FF3F3A;
+    margin-right: 16px;
+}
+
+.au-stats__item-desc {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: #1E212C;
 }
