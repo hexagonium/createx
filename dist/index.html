@@ -126,6 +126,8 @@
                 <!-- 2. О НАС -->
                 <section class="about-us">
                     <div class="container">
+                        <img class="au__decor" src="assets/decor/about-us/shapes.svg" alt="Декорация">
+
                         <!-- 2.1 ЗАГОЛОВОК БЛОКА -->
                         <div class="au-head">
                             <!-- 2.1.1 КОНТЕНТ -->
@@ -134,7 +136,8 @@
                                 <h2 class="au-head__header header">Createx Online School</h2>
                                 <h4 class="au-head__subheader subheader">Createx Online School is a leader in online
                                     studying. We have lots of courses and programs from the main market experts.</h4>
-                                <p class="au-head__paragraph paragraph">We provide relevant approaches to online learning,
+                                <p class="au-head__paragraph paragraph">We provide relevant approaches to online
+                                    learning,
                                     internships
                                     and employment in the largest companies in the country. Our educational programs
                                     help
@@ -188,8 +191,83 @@
                     </div>
                 </section>
 
-                <!-- 3.  -->
-                
+                <!-- 3. КУРСЫ  -->
+                <section class="courses">
+                    <div class="container">
+                        <!-- 3.1 ЗАГОЛОВОК -->
+                        <div class="c-head">
+                            <h3 class="c-head__overheader overheader">OUR MAIN DIRECTIONS</h3>
+                            <h2 class="c-head__header header">What do we teach</h2>
+                        </div>
+
+                        <!-- 3.2 ФИЛЬТР КУРСОВ -->
+                        <div class="c-filter">
+                            <button class="c-filter__button c-filter__button_active" type="button" data-filter="all">All</button>
+                            <button class="c-filter__button" type="button" data-filter=".marketing">Marketing</button>
+                            <button class="c-filter__button" type="button" data-filter=".management">Management</button>
+                            <button class="c-filter__button" type="button" data-filter=".hr-recruting">HR & Recruting</button>
+                            <button class="c-filter__button" type="button" data-filter=".design">Design</button>
+                            <button class="c-filter__button" type="button" data-filter=".development">Development</button>
+                        </div>
+
+                        <!-- 3.3 КАРТОЧКИ КУРСОВ -->
+                        <div class="c-cards">
+                            <div class="c-card mix marketing" data-order="1">
+                                <img class="c-card__img" src="assets/images/courses/1.jpg" alt="Курс">
+
+                                <div class="c-card__content">
+                                    <div class="c-card__category" style="background: #03CEA4;">Marketing</div>
+                                    <p class="c-card__desc">Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.</p>
+                                    <a href="#" class="c-card__link">Check courses</a>
+                                </div>
+                            </div>
+                                
+                            <div class="c-card mix management" data-order="2">
+                                <img class="c-card__img" src="assets/images/courses/2.jpg" alt="Курс">
+
+                                <div class="c-card__content">
+                                    <div class="c-card__category" style="background: #5A87FC;">Management</div>
+                                    <p class="c-card__desc">Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.</p>
+                                    <a href="#" class="c-card__link">Check courses</a>
+                                </div>
+                            </div>
+
+                            <div class="c-card mix hr-recruting" data-order="3">
+                                <img class="c-card__img" src="assets/images/courses/3.jpg" alt="Курс">
+
+                                <div class="c-card__content">
+                                    <div class="c-card__category" style="background: #F89828;">HR & Recruting</div>
+                                    <p class="c-card__desc">Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.</p>
+                                    <a href="#" class="c-card__link">Check courses</a>
+                                </div>
+                            </div>
+
+                            <div class="c-card mix design" data-order="4">
+                                <img class="c-card__img" src="assets/images/courses/4.jpg" alt="Курс">
+
+                                <div class="c-card__content">
+                                    <div class="c-card__category" style="background: #F52F6E;">Design</div>
+                                    <p class="c-card__desc">Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.</p>
+                                    <a href="#" class="c-card__link">Check courses</a>
+                                </div>
+                            </div>
+
+                            <div class="c-card mix development" data-order="4">
+                                <img class="c-card__img" src="assets/images/courses/5.jpg" alt="Курс">
+
+                                <div class="c-card__content">
+                                    <div class="c-card__category" style="background: #7772F1;">Development</div>
+                                    <p class="c-card__desc">Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.</p>
+                                    <a href="#" class="c-card__link">Check courses</a>
+                                </div>
+                            </div>
+
+                            <div class="c-card_empty mix" data-order="5">
+                                <p class="c-card_empty-desc">New studying program coming soon...</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
 
             <!-- <div class="main-gray"></div> -->
@@ -203,9 +281,9 @@
         </footer>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
-        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="js/mixitup.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
