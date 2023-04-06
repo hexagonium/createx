@@ -345,7 +345,7 @@ html, body {
 
 /* 3. КУРСЫ */
 .courses {
-    margin-bottom: 180px;
+    margin-bottom: 135px;
     background: url("../assets/decor/courses/group.svg");
     background-repeat: no-repeat;
 }
@@ -425,7 +425,7 @@ html, body {
     font-weight: 700;
     font-size: 20px;
     line-height: 150%;
-    color: #424551;
+    color: #787A80;
     margin: auto;
     width: 60%;
     text-align: center;
@@ -433,7 +433,7 @@ html, body {
 
 .c-card:hover {
     box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
-    transform: translateY(-4px);
+    transform: translateY(-5px) scale(1.025);
 }
 
 .c-card__img {
@@ -485,3 +485,54 @@ html, body {
     margin-left: 8px;
     margin-top: 2px;
 }
+
+
+/* 4. СЕРТИФИКАТ */
+.certificate .container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.certificate__decor {
+    position: absolute;
+    left: -12%;
+    top: 0;
+}
+
+/* 4.1 КОНТЕНТ */
+.c-content {
+    margin-top: 45px;
+}
+
+.c-content__inner {
+    width: 80%;
+}
+
+.c-content__header {
+    margin-bottom: 48px;
+}
+
+.c-content__paragraph {
+    margin-bottom: 32px;
+}
+
+.c-content__logos-box {
+    display: flex;
+    column-gap: 40px;
+}
+
+/* 4.2 ИЗОБРАЖЕНИЕ */
+.certificate__img-box {
+    width: 75%;
+}
+
+.certificate__img {
+    transform: translateY(45px);
+    width: 100%;
+    border: 1px solid #E5E8ED;
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+}
+
+
+/* 5. */
