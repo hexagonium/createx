@@ -535,4 +535,71 @@ html, body {
 }
 
 
-/* 5. */
+/* 5. КОМАНДА */
+.main-gray {
+    background-color: #F4F5F6;
+    padding: 150px 0 175px;
+}
+
+.t-head-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.t-head__header {
+    margin-bottom: 0;
+}
+
+.t-nav {
+    height: fit-content;
+    align-self: flex-end;
+}
+
+.t-nav__arrow {
+    cursor: pointer;
+}
+
+.t-nav__arrow:hover {}
+
+.t-slider {
+    margin-top: 60px;
+}
+
+.t-slider .slick-list {
+    margin: 0 -25px;
+}
+
+.t-slider__card {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.t-slider__img-box {
+    background-color: #FFCF2D;
+    border-radius: 4px;
+    padding: 30px 20px 0px;
+    margin-bottom: 16px;
+}
+
+.t-slider__img {
+    margin: 0 auto;
+}
+
+.t-slider__person-info {
+    text-align: center;
+}
+
+.t-slider__person-name {
+    margin-bottom: 4px;
+    color: #424551;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.t-slider__person-job {
+    color: #787A80;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+}
