@@ -541,7 +541,8 @@ html, body {
     padding: 150px 0 175px;
 }
 
-.t-head-nav {
+/* 5.1 ЗАГОЛОВОК */
+.t-head-arrows {
     display: flex;
     justify-content: space-between;
 }
@@ -550,17 +551,53 @@ html, body {
     margin-bottom: 0;
 }
 
-.t-nav {
+.t-arrows {
     height: fit-content;
     align-self: flex-end;
+    display: flex;
 }
 
-.t-nav__arrow {
-    cursor: pointer;
+.t-arrow {
+    position: relative;
+    line-height: 100%;
+    z-index: 2;
 }
 
-.t-nav__arrow:hover {}
+.t-arrow::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    width: 48px;
+    height: 48px;
+    background-color: #FF3F3A;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all .2s linear;
+    z-index: -1;
+    border-radius: 50%;
+}
 
+.t-arrow:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.t-arrow path {
+    transition: all .2s linear;
+}
+
+.t-arrow:hover path {
+    fill: #fff;
+}
+
+.t-arrow-prev {
+
+}
+
+.t-arrow-next {
+    margin-left: 24px;
+}
+
+/* 5.2 СЛАЙДЕР */
 .t-slider {
     margin-top: 60px;
 }
@@ -572,6 +609,7 @@ html, body {
 .t-slider__card {
     margin-right: 25px;
     margin-left: 25px;
+    transition: all .2s linear;
 }
 
 .t-slider__img-box {
@@ -579,12 +617,54 @@ html, body {
     border-radius: 4px;
     padding: 30px 20px 0px;
     margin-bottom: 16px;
+    position: relative;
+    overflow: hidden;
 }
 
 .t-slider__img {
     margin: 0 auto;
 }
 
+/* 5.2.1 КОНТЕЙНЕР СОЦИАЛЬНЫХ СЕТЕЙ С HOVER-ЭФФЕКТОМ */
+.t-slider__socials-box {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, rgba(30, 33, 44, 0) 43.9%, rgba(30, 33, 44, 0.03) 55.21%, rgba(30, 33, 44, 0.33) 68.73%, rgba(30, 33, 44, 0.56) 76.17%, rgba(30, 33, 44, 0.768225) 83.75%, rgba(30, 33, 44, 0.92) 91.49%, #1E212C 100%);
+    border-radius: 0px 0px 4px 4px;
+    transform: translateY(50%);
+    transition: all .3s linear;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.t-slider__card:hover .t-slider__socials-box {
+    transform: translateY(0);
+}
+
+.t-slider__socials-list {
+    width: fit-content;
+    display: flex;
+    column-gap: 12px;
+    margin: 0px 20px 20px 0px;
+}
+
+.t-slider__socials-item {
+    width: fit-content;
+}
+
+.t-slider__socials-link g {
+    transition: all .2s linear;
+}
+
+.t-slider__socials-link:hover g {
+    opacity: 1;
+}
+
+/* 5.2.2 ИНФОРМАЦИЯ О ЧЛЕНЕ КОМАНДЫ */
 .t-slider__person-info {
     text-align: center;
 }

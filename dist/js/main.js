@@ -21,6 +21,19 @@ $(function () {
         autoplay: true,
         autoplaySpeed: 2000,
         draggable: false,
-        arrows: false
+        arrows: false,
+        waitForAnimate: false
+    })
+
+    $('.t-arrow-prev').on('click', function (e) {
+        e.preventDefault()
+
+        $('.t-slider').slick('slickPrev')
+    })
+
+    $('.t-arrow-next').on('click', function (e) {
+        e.preventDefault()
+
+        $('.t-slider').slick('slickNext')
     })
 })
