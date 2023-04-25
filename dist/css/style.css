@@ -541,6 +541,22 @@ html, body {
     padding: 150px 0 175px;
 }
 
+.team {
+    position: relative;
+}
+
+.t-decor-1 {
+    position: absolute;
+    top: -10%;
+    left: 8%;
+}
+
+.t-decor-2 {
+    position: absolute;
+    top: -15%;
+    right: 2%;
+}
+
 /* 5.1 ЗАГОЛОВОК */
 .t-head-arrows {
     display: flex;
@@ -587,10 +603,6 @@ html, body {
 
 .t-arrow:hover path {
     fill: #fff;
-}
-
-.t-arrow-prev {
-
 }
 
 .t-arrow-next {
