@@ -102,6 +102,44 @@ html, body {
     line-height: 160%;
 }
 
+.arrows {
+    height: fit-content;
+    align-self: flex-end;
+    display: flex;
+}
+
+.arrow {
+    position: relative;
+    line-height: 100%;
+    z-index: 3;
+}
+
+.arrow::before {
+    position: absolute;
+    content: "";
+    top: 46%;
+    left: 50%;
+    width: 48px;
+    height: 48px;
+    background-color: #FF3F3A;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all .2s linear;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.arrow:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.arrow path {
+    transition: all .2s linear;
+}
+
+.arrow:hover path {
+    fill: #fff;
+}
+
 
 
 /* ----- БЛОКИ ----- */
@@ -384,6 +422,7 @@ html, body {
 .c-filter__button:hover {
     border-color: #FF3F3A;
     color: #FF3F3A;
+    transform: scale(1.05);
 }
 
 .c-filter__button_active {
@@ -393,10 +432,8 @@ html, body {
 }
 
 .c-filter__button_active:hover {
-    border-color: none;
+    transform: scale(1);
     color: #fff;
-    transform: scale(1.05);
-    transition: 0.1s all linear;
 }
 
 /* 3.3 КАРТОЧКИ КУРСОВ */
@@ -543,6 +580,7 @@ html, body {
 
 .team {
     position: relative;
+    margin-bottom: 180px;
 }
 
 .t-decor-1 {
@@ -565,44 +603,6 @@ html, body {
 
 .t-head__header {
     margin-bottom: 0;
-}
-
-.t-arrows {
-    height: fit-content;
-    align-self: flex-end;
-    display: flex;
-}
-
-.t-arrow {
-    position: relative;
-    line-height: 100%;
-    z-index: 2;
-}
-
-.t-arrow::before {
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: 50%;
-    width: 48px;
-    height: 48px;
-    background-color: #FF3F3A;
-    transform: translate(-50%, -50%) scale(0);
-    transition: all .2s linear;
-    z-index: -1;
-    border-radius: 50%;
-}
-
-.t-arrow:hover::before {
-    transform: translate(-50%, -50%) scale(1);
-}
-
-.t-arrow path {
-    transition: all .2s linear;
-}
-
-.t-arrow:hover path {
-    fill: #fff;
 }
 
 .t-arrow-next {
@@ -694,4 +694,82 @@ html, body {
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
+}
+
+
+/* 6. ОТЗЫВЫ */
+/* 6.1 ЗАГОЛОВОК */
+.r-head {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+/* 6.2 СЛАЙДЕР ОТЗЫВОВ */
+.r-slide {
+    padding: 64px 105px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    margin: 0 auto;
+}
+
+.r-slide__content {
+    padding-left: 58px;
+    position: relative;
+}
+
+.r-slide__content::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("../assets/icons/reviews/braces.svg");
+    top: 0;
+    left: 0;
+    width: 28px;
+    height: 20px;
+}
+
+.r-slide__review {
+    color: #424551;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 24px;
+}
+
+.r-slide__author {
+    display: flex;
+    align-items: center;
+}
+
+.r-slide__author-avatar {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.r-slide__author-name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: #1E212C;
+}
+
+.r-slide__author-position {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #787A80;
+}
+
+/* 6.2.2 СТРЕЛКИ */
+.r-arrow {
+    
+}
+
+.r-arrow-prev {
+
+}
+
+.r-arrow-next {
+
 }

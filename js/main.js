@@ -2,6 +2,7 @@ $(function () {
     Fancybox.bind()
 
 
+
     var config = {
         animation: {
             duration: 300,
@@ -14,6 +15,7 @@ $(function () {
         $('.c-filter__button').removeClass('c-filter__button_active')
         $(this).addClass('c-filter__button_active')
     })
+
 
 
     $('.t-slider').slick({
@@ -35,5 +37,26 @@ $(function () {
         e.preventDefault()
 
         $('.t-slider').slick('slickNext')
+    })
+
+
+
+    $('.r-slider').slick({
+        slidesToShow: 1,
+        draggable: false,
+        arrows: false,
+        waitForAnimate: false
+    })
+
+    $('.r-arrow-prev').on('click', function (e) {
+        e.preventDefault()
+
+        $('.r-slider').slick('slickPrev')
+    })
+
+    $('.r-arrow-next').on('click', function (e) {
+        e.preventDefault()
+
+        $('.r-slider').slick('slickNext')
     })
 })
