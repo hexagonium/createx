@@ -45,7 +45,9 @@ $(function () {
         slidesToShow: 1,
         draggable: false,
         arrows: false,
-        waitForAnimate: false
+        waitForAnimate: false,
+        dots: true,
+        appendDots: $('.r-dots')
     })
 
     $('.r-arrow-prev').on('click', function (e) {
