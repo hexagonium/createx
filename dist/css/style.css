@@ -705,8 +705,12 @@ html, body {
 }
 
 /* 6.2 СЛАЙДЕР ОТЗЫВОВ */
-.r-slider .slick-list {
-    /* width: 80%; */
+.r-slider__wrapper {
+    position: relative;
+}
+
+.r-slider {
+    padding: 0 90px;
 }
 
 .r-slide {
@@ -767,13 +771,50 @@ html, body {
 
 /* 6.2.2 СТРЕЛКИ */
 .r-arrow {
-    
+    position: absolute;
 }
 
 .r-arrow-prev {
-
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .r-arrow-next {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
+/* 6.2.3 ТОЧКИ */
+.r-dots {
+    margin-top: 35px;
+}
+
+.r-dots .slick-dots {
+    display: flex;
+    column-gap: 12px;
+    justify-content: center;
+}
+
+.r-dots button {
+    font-size: 0;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.r-dots button::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #B3B7BC;
+    transition: all .2s linear;
+}
+
+.r-dots .slick-active button::before {
+    background-color: #424551;
 }
