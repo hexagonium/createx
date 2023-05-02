@@ -698,6 +698,22 @@ html, body {
 
 
 /* 6. ОТЗЫВЫ */
+.reviews {
+    position: relative;
+}
+
+.r-decor-1 {
+    position: absolute;
+    top: -10%;
+    left: 0%;
+}
+
+.r-decor-2 {
+    position: absolute;
+    top: -8%;
+    right: 0%;
+}
+
 /* 6.1 ЗАГОЛОВОК */
 .r-head {
     margin-bottom: 60px;
