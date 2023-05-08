@@ -1,8 +1,10 @@
 $(function () {
+    // Видео
     Fancybox.bind()
 
 
 
+    // Карточки курсов с фильтром
     var config = {
         animation: {
             duration: 300,
@@ -18,6 +20,7 @@ $(function () {
 
 
 
+    // Слайдер блока с командой
     $('.t-slider').slick({
         slidesToShow: 3,
         autoplay: true,
@@ -41,6 +44,7 @@ $(function () {
 
 
 
+    // Слайдер блока с отзывами
     $('.r-slider').slick({
         slidesToShow: 1,
         draggable: false,
