@@ -865,6 +865,7 @@ html, body {
     gap: 40px 50px;
     justify-content: center;
 }
+
 .companies-logos__item {
     width: fit-content;
     display: grid;
@@ -880,4 +881,84 @@ html, body {
 .companies-logos__logo:hover {
     filter: grayscale(0);
     opacity: 1;
+}
+
+
+/* 8. PROGRAM */
+.main-program {
+    margin: 115px 0 185px;
+}
+
+.program-inner {
+    position: relative;
+}
+
+/* 8.1 HEADING */
+.program-heading {
+    margin-bottom: 60px;
+}
+
+/* 8.2 ACCORDION */
+.program-accordion {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    width: 53%;
+}
+
+.program-accordion__link {
+    display: block;
+    padding-left: 40px;
+}
+
+.program-accordion__header {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #1E212C;
+    position: relative;
+}
+
+.program-accordion__header::before,
+.program-accordion__header::after {
+    content: "";
+    display: block;
+    border: 2px;
+    position: absolute;
+    top: 15px;
+    left: -40px;
+    height: 2px;
+    width: 18px;
+    background-color: #FF3F3A;
+}
+
+.program-accordion__header::after {
+    transform: rotate(90deg);
+    transition: all 0.3s linear;
+}
+
+.program-accordion__link_active .program-accordion__header::after {
+    transform: rotate(0deg);
+}
+
+.program-accordion__header span {
+    color: #FF3F3A;
+    font-weight: 400;
+    margin-right: 4px;
+}
+
+.program-accordion__desc {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #424551;
+    margin-left: 40px;
+}
+
+/* 8.3 IMAGE */
+.program-image {
+    position: absolute;
+    top: 10%;
+    right: -5%;
 }
