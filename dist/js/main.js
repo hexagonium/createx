@@ -65,4 +65,15 @@ $(function () {
 
         $('.r-slider').slick('slickNext')
     })
+
+
+
+    // Program accordion
+    $('.program-accordion__link').on('click', function (e) {
+        e.preventDefault()
+        
+        $(this).toggleClass('program-accordion__link_active')
+
+        $(this).next().slideToggle()
+    })
 })
