@@ -72,8 +72,14 @@ $(function () {
     $('.program-accordion__link').on('click', function (e) {
         e.preventDefault()
         
-        $(this).toggleClass('program-accordion__link_active')
-
-        $(this).next().slideToggle()
+        if ($(this).hasClass('program-accordion__link_active')) {
+            $(this).removeClass('program-accordion__link_active')
+            $(this).siblings().slideUp()
+        } else {
+            $('.program-accordion__link').removeClass('program-accordion__link_active')
+            $('.program-accordion__desc').slideUp()
+            $(this).addClass('program-accordion__link_active')
+            $(this).siblings().slideDown()
+        }
     })
 })
