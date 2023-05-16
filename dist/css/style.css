@@ -994,6 +994,11 @@ html, body {
 /* 9.2.1 POST PREVIEW */
 .blog-post {
     width: 360px;
+    transition: all 0.2s linear;
+}
+
+.blog-post:hover {
+    transform: scale(1.025);
 }
 
 .blog-post__img-box {
@@ -1073,4 +1078,84 @@ html, body {
     line-height: 160%;
     color: #424551;
     margin-bottom: 16px;
+}
+
+
+/* 10. CONTACT INFO */
+.main-contacts {
+    margin-bottom: 180px;
+}
+
+.contacts-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 10.1 CONTENT */
+
+/* 10.1.1 HEADING */
+.contacts-heading__header {
+    margin-bottom: 40px;
+}
+
+/* 10.1.2 CONTACTS DATA */
+.contacts-info {
+    display: flex;
+    row-gap: 24px;
+    flex-direction: column;
+    margin-bottom: 48px;
+}
+
+.contacts-info__item {
+    margin-left: 36px;
+    position: relative;
+}
+
+.contacts-info__action {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    color: #787A80;
+}
+
+.contacts-info__data {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #1E212C;
+}
+
+.contacts-info__icon {
+    position: absolute;
+    top: 0;
+    left: -36px;
+}
+
+/* 10.1.3 SOCIALS */
+.contacts-socials__header {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #1E212C;
+    margin-bottom: 24px;
+}
+
+.contacts-socials__row {
+    display: flex;
+    column-gap: 32px;
+}
+
+.contacts-socials__icon path {
+    transition: all 0.2s linear;
+}
+
+.contacts-socials__icon:hover path {
+    fill: #FF3F3A;
+}
+
+/* 10.2 MAP */
+.contacts-content__map {
+    align-self: flex-end;
 }
