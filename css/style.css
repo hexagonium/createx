@@ -86,7 +86,6 @@ html, body {
     color: #1E212C;
     font-weight: 900;
     font-size: 46px;
-    margin-bottom: 60px;
     line-height: 130%;
 }
 
@@ -1158,4 +1157,127 @@ html, body {
 /* 10.2 MAP */
 .contacts-content__map {
     align-self: flex-end;
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* 11. QUESTIONS FORM */
+.main-questions {
+    padding-bottom: 180px;
+}
+
+.questions-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 11.1 IMAGE */
+
+/* 11.2 FORM */
+.questions-form {
+    width: 600px;
+}
+
+/* 11.2.1 HEADING */
+.questions-form__heading {
+    margin-bottom: 40px;
+}
+
+/* 11.2.2 FORM INPUTS */
+.questions-form__row {
+    display: flex;
+    margin-bottom: 24px;
+    column-gap: 24px;
+}
+
+.questions-form__label-input {
+    flex-grow: 1;
+}
+
+.questions-form__label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #424551;
+}
+
+.questions-from__input {
+    width: 100%;
+    border: 1px solid #D7DADD;
+    border-radius: 4px;
+    padding: 12px 16px;
+    display: block;
+    margin-top: 8px;
+    color: #424551;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    transition: all .2s linear;
+}
+
+.questions-from__input:focus {
+    border-color: hsla(2, 100%, 61%, 0.6);
+    box-shadow: 0px 20px 80px -20px rgba(255, 63, 58, 0.08), 0px 30px 24px -10px rgba(255, 63, 58, 0.05), 0px 12px 10px -6px rgba(255, 63, 58, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+}
+
+.questions-from__input::placeholder {
+    color: #9A9CA5;
+}
+
+.questions-form__textarea {
+    height: 128px;
+    resize: none;
+}
+
+/* 11.2.3 FORM BUTTONS */
+.questions-form__buttons {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.questions-form__label-checkbox {
+    display: flex;
+    width: 300px;
+}
+
+.questions-form__checkbox {
+    margin-right: 12px;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    margin-top: 5px;
+}
+
+.questions-form__checkbox-default {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0, 0, 0, 0);
+}
+
+.questions-form__checkbox-custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #B3B7BC;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.questions-form__checkbox-default:hover + .questions-form__checkbox-custom {
+    border-color: #ff7a76;
+}
+
+.questions-form__checkbox-default:checked + .questions-form__checkbox-custom {
+    background: url("../assets/icons/form/check.svg") 50% 50% no-repeat, #FF3F3A;
+    border-color: #FF3F3A;
+}
+
+.questions-form__button {
+    padding: 0 90px;
 }
