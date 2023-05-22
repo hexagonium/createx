@@ -2,6 +2,7 @@
 html, body {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -1402,6 +1403,11 @@ html, body {
     background: url(../assets/icons/footer/arrow-right-small.svg) 50% 50% no-repeat;
     width: 16px;
     height: 32px;
+    transition: all .2s linear;
+}
+
+.footer-gen__submit:hover {
+    transform: scale(1.1) translateY(-45%);
 }
 
 .footer-gen__input-desc {
